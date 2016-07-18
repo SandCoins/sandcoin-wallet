@@ -1,4 +1,5 @@
 INPUT(
+./build\bitcoin-qt_res.o
 ./build\bitcoin.o
 ./build\bitcoingui.o
 ./build\transactiontablemodel.o
@@ -99,9 +100,8 @@ INPUT(
 ./build\qmlexchangeslistitem.o
 ./build\guiexchangeslistview.o
 ./build\guiexchangescontrol.o
+./build\twitterwidget.o
 ./build\qrcodedialog.o
-./build\sandcoins-qt_qml_plugin_import.o
-./build\sandcoins-qt_plugin_import.o
 ./build\qrc_bitcoin.o
 ./build\moc_bitcoingui.o
 ./build\moc_transactiontablemodel.o
@@ -165,5 +165,6 @@ INPUT(
 ./build\moc_qmlexchangeslistitem.o
 ./build\moc_guiexchangeslistview.o
 ./build\moc_guiexchangescontrol.o
+./build\moc_twitterwidget.o
 ./build\moc_qrcodedialog.o
 );

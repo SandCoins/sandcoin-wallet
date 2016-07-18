@@ -32,7 +32,7 @@
 #ifdef _WIN32_WINNT
 #undef _WIN32_WINNT
 #endif
-#define _WIN32_WINNT 0x0501
+#define _WIN32_WINNT 0x0600
 #ifdef _WIN32_IE
 #undef _WIN32_IE
 #endif
@@ -383,7 +383,8 @@ boost::filesystem::path static GetAutostartDir()
 
 boost::filesystem::path static GetAutostartFilePath()
 {
-    return GetAutostartDir() / ""+ COIN_NAME + ".desktop";
+    std::string filename (""+ COIN_NAME + ".desktop");
+    return GetAutostartDir() / filename;
 }
 
 bool GetStartOnSystemStartup()
